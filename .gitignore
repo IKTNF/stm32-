@@ -1,0 +1,13 @@
+# 忽略编译生成的目标文件和二进制程序
+*.o *.obj *.axf *.hex *.bin *.elf *.map *.lst *.lnp *.sym *.crf *.htm *.sct *.tgt *.dep *.plg *.build_log.htm *.iex *.ll
+
+# 忽略Keil默认的输出文件夹
+Objects/
+Listings/
+
+# 忽略缓存和临时文件
+*.bak *.tmp *.swp *~
+
+# 【极其重要】忽略你自己的调试器配置、窗口布局、断点等个人设置
+*.uvoptx
+*.uvguix.*
