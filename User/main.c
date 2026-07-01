@@ -250,8 +250,8 @@ void TIM1_UP_IRQHandler(void)
 				if (LeftPWM > 100) {LeftPWM = 100;} else if (LeftPWM < -100) {LeftPWM = -100;}
 				if (RightPWM > 100) {RightPWM = 100;} else if (RightPWM < -100) {RightPWM = -100;}
 				
-				Motor_SetPWM(1, LeftPWM+4);
-				Motor_SetPWM(2, RightPWM+5);
+				Motor_SetPWM(1, LeftPWM+4);	//左轮死区输入
+				Motor_SetPWM(2, RightPWM+5);	//右轮死区输入
 			}
 			else
 			{
